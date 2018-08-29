@@ -1,21 +1,16 @@
-Create an interactive query and visualization dashboard for a set of
-IMDB movie data. Inspired by the [Shiny Movie Explorer](https://shiny.rstudio.com/gallery/movie-explorer.html).
+# Board Game Analysis
 
-#### Setting Up
+In this project, we analyzed data from BoardGameGeek.com (https://www.kaggle.com/mrpantherson/board-game-data) to understand:
 
-This demo requires the [pandas](http://pandas.pydata.org/)  library
-in order to run. To install pandas using conda, execute the command:
+1. What features can we recommend our clients to produce the highest ratings in a new game?
+2. If a user inputs certain characteristics, can we recommend a similar game for them to try? 
 
-    conda install pandas
+By running exploratory analysis using Net Promoter Score and implementing a multiple regression and decision tree model, we concluded that a board game maker should:
 
-To install using pip, execute the command:
+*Create longer, more complex games
+*Target audiences of at least 13 years old
+*Create concepts centered around wargames
 
-    pip install pandas
+We also created an interactive bokeh app that allowed users to input preferred characteristics and view recommended games based on game rank.
 
-#### Running
-
-To view the app directly from a Bokeh server, navigate to the parent
-directory [`examples/app`](https://github.com/bokeh/bokeh/tree/master/examples/app),
-and execute the command:
-
-    bokeh serve --show board_games
+![alt text](https://github.com/helenashi95/Board-Game-Analysis-Project/blob/master/bokeh%20app.png)
